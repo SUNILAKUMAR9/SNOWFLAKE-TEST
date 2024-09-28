@@ -34,9 +34,16 @@
       <li><a href="howtouse.html">How to use</a></li>
       <li><a href="download.html">Download</a></li>
       <li><a href="#">FAQs</a></li>
-      <li><a href="#">Contribute</a></li>
+      <li><a href="#" id="contribute-link">Contribute</a></li>
     </ul>
   </div>
   <script src="script.js"></script>
+  <script>
+    const toggleSwitch = document.querySelector('.dark-mode-toggle');
+    toggleSwitch.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
 </body>
 </html>

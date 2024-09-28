@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}*
+
 {
   margin: 0;
   padding: 0;
@@ -200,4 +204,27 @@ header .logo
   {
     font-size: 2em;
   }
+  @media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stacks the nav items vertically on small screens */
+    }
+  }
+  body.dark-mode {
+    background-color: #121212;
+    color: #f3f3f3;
+  }
+
+  nav.dark-mode {
+    background-color: rgba(20, 20, 20, 0.9); /* Dark background for navbar */
+  } 
+
+  .cta-button.dark-mode {
+    background-color: #333; /* Darker button in dark mode */
+  }
+
+  .cta-button.dark-mode:hover {
+    background-color: #555;
+  }
+
+
 }

@@ -57,9 +57,13 @@ body {
 /* Navigation Bar */
 
 .nav {
-  background-color: rgba(243, 243, 243, 0.3);
-  box-shadow: 0 0 2rem rgba(243, 243, 243, 0.3);
-  margin: 0;
+  position: sticky; /* Keeps the navbar on the top when you scroll */
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  background-color: rgba(243, 243, 243, 0.9); /* Slightly transparent */
+}
+nav a:hover {
+  border-bottom: 2px solid var(--clr-accent-light); /* Adds an underline effect on hover */
 }
 
 .nav__container {
